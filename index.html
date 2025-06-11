@@ -1,0 +1,230 @@
+<!-- Skills Section -->
+        <section id="skills" class="page-section">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>💪 Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Communication</div>
+                        <div class="skill-item">Critical Thinking</div>
+                        <div class="skill-item">Problem-solving</div>
+                        <div class="skill-item">Teamwork</div>
+                        <div class="skill-item">Time Management</div>
+                        <div class="skill-item">Work Ethic</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>💻 Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Microsoft Office</div>
+                        <div class="skill-item">QuickBooks</div>
+                    </div>
+                </div>
+            </div>
+        </section><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Arias - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/82e02cf815.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">EA</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-avatar-wrapper">
+                        <img src="./assets/mr evan.JPG" alt="Evan Arias" class="hero-avatar">
+                    </div>
+                    <h1>Evan Arias</h1>
+                    <p class="tagline">Computer Science Major | Aspiring Software Developer</p>
+                    <p class="description" id="typing-text">"Turning problems into code and solutions, one step at a time."</p>
+                    <div class="cta-buttons">
+                        <a href="#" onclick="showSection('about')" class="cta-button">Learn More About Me</a>
+                        <a href="#" onclick="showSection('projects')" class="cta-button">View My Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Evan Arias, and I'm a 24-year-old Computer Science major transferring to University of Nevada, Las Vegas. I live in California and work as a logistics company's data analyst and software developer, developing tools to streamline operations and improve efficiency.</p>
+                    <p>I'm passionate about problem-solving, building impactful software, and learning new technologies to grow as a developer. Outside of work and school, I enjoy JDM cars, golfing, and watching Formula 1. I am dedicated, hardworking, and always ready to take on new challenges.</p>
+                    <p>I strive to apply my technical skills to address real-world challenges and deliver meaningful results in every project I undertake.</p>
+                </div>
+                <div class="skills-preview">
+                    <div class="skills-grid">
+                        <div class="skill-item">💻 C++</div>
+                        <div class="skill-item">🐍 Python</div>
+                        <div class="skill-item">☕ Java</div>
+                        <div class="skill-item">🌐 HTML/CSS</div>
+                        <div class="skill-item">⚡ JavaScript</div>
+                        <div class="skill-item">📊 Data Analysis</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3>My Resume</h3>
+                <p>View or download my resume below:</p>
+                <a href="./assets/Evan C Arias Resume.pdf" target="_blank" class="resume-button">
+                    <i class="fas fa-file-pdf"></i> View Resume
+                </a>
+            </div>
+
+            <div class="education-section">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>University of Nevada, Las Vegas</strong> (2025-2026)<br><em>Computer Science Major (Transfer)</em></li>
+                    <li><strong>California State University, Fullerton</strong> (2024-2025)<br><em>Computer Science Major</em></li>
+                    <li><strong>Citrus College</strong> (2023-2024)<br><em>Associate of Science-Transfer</em></li>
+                    <li><strong>Mt. San Antonio College</strong> (2019-2023)</li>
+                    <li><strong>Metropolitan State University of Denver</strong> (2018)</li>
+                </ul>
+            </div>
+
+            <div class="certifications-section">
+                <h3>Certifications</h3>
+                <a href="https://ude.my/UC-355e25f4-5e26-4899-8177-642823cbdaa2" target="_blank" class="certification-link">
+                    <i class="fas fa-certificate"></i> Machine Learning for Absolute Beginners - Level 1
+                </a>
+            </div>
+
+            <div class="experience-section">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Software Developer / Project Manager - Luna Logistics Inc.</strong><br>
+                        <em>June 2024 - Present</em>
+                        <ul>
+                            <li>Developing calculator applications for company website</li>
+                            <li>Designing interactive web features using HTML, CSS, and JavaScript</li>
+                            <li>Spearheading the end-to-end redesign and redevelopment of the Luna Logistics website as project lead, integrating the freight calculator into a seamless, user-friendly interface</li>
+                            <li>Performing data entry and analysis to inform product improvements</li>
+                            <li>Managing customer service inquiries and accounts receivable processes</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Administrative Assistant - Associated Produce Dealers & Brokers of Los Angeles</strong><br>
+                        <em>January 2019 - May 2025</em>
+                        <ul>
+                            <li>Customer service and support</li>
+                            <li>Accounts receivables management</li>
+                            <li>Basic IT functions and support</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projects-list">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="page-section">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>💪 Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Communication</div>
+                        <div class="skill-item">Critical Thinking</div>
+                        <div class="skill-item">Problem-solving</div>
+                        <div class="skill-item">Teamwork</div>
+                        <div class="skill-item">Time Management</div>
+                        <div class="skill-item">Work Ethic</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>💻 Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Microsoft Office</div>
+                        <div class="skill-item">QuickBooks</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                
+                <h3>Reach Out on:</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/evan-arias-737710269/" target="_blank" class="social-button">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/evan.arias/?hl=en" target="_blank" class="social-button">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Evan Arias. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
