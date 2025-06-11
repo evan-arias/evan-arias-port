@@ -55,8 +55,48 @@ function showSection(sectionId) {
     // Update navbar active state
     updateNavbarActiveState(sectionId);
     
+    // Close mobile menu if open
+    closeMobileMenu();
+    
     // Scroll to top smoothly
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Mobile menu functionality
+function initMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (mobileMenuToggle && navLinks) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        navLinks.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (mobileMenuToggle && navLinks) {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
 }
 
 // Update navbar active state
@@ -116,6 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize contact form
     initContactForm();
+    
+    // Initialize mobile menu
+    initMobileMenu();
 });
 
 // Navbar scroll effect
