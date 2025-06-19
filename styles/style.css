@@ -445,6 +445,26 @@ nav.scrolled {
     border-color: var(--accent-color);
 }
 
+.featured-project {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 10px 30px rgba(255, 23, 68, 0.2);
+    position: relative;
+}
+
+.featured-project::before {
+    content: "Featured";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
 .project-image {
     height: 200px;
     overflow: hidden;
@@ -476,6 +496,23 @@ nav.scrolled {
     color: var(--text-secondary);
     margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    background: rgba(255, 23, 68, 0.1);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 23, 68, 0.2);
 }
 
 .view-code-button {

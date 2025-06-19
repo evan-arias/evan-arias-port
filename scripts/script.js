@@ -1,6 +1,14 @@
 // Projects data
 const projects = [
     {
+        title: "Luna Logistics Load Board",
+        description: "A comprehensive full-stack logistics management platform that streamlines freight load distribution and connects truck drivers with shipping opportunities. Features a public load board with real-time updates and a secure admin portal with role-based authentication.",
+        link: "https://lunaloads.com",
+        image: "./assets/lunaloads.png",
+        technologies: ["Node.js", "Express.js", "PostgreSQL", "HTML5", "CSS3", "JavaScript"],
+        featured: true
+    },
+    {
         title: "Guessing Game (Python)",
         description: "A number guessing game with difficulty levels and engaging text art to welcome players.",
         link: "https://onlinegdb.com/pnHnYod1k",
@@ -145,15 +153,31 @@ function loadProjects() {
         const projectCard = document.createElement('div');
         projectCard.classList.add('project-card');
         
+        // Add featured class for special styling
+        if (project.featured) {
+            projectCard.classList.add('featured-project');
+        }
+        
+        // Build technologies section if available
+        let technologiesHTML = '';
+        if (project.technologies) {
+            technologiesHTML = `
+                <div class="project-tech">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            `;
+        }
+        
         projectCard.innerHTML = `
             <div class="project-image">
-                <img src="${project.image}" alt="${project.title} Word Art" loading="lazy">
+                <img src="${project.image}" alt="${project.title}" loading="lazy">
             </div>
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
+                ${technologiesHTML}
                 <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="view-code-button">
-                    <i class="fas fa-code"></i> View Code
+                    <i class="fas fa-external-link-alt"></i> ${project.link.includes('lunaloads.com') ? 'View Live Site' : 'View Code'}
                 </a>
             </div>
         `;
