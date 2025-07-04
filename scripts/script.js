@@ -12,7 +12,7 @@ const projects = [
         title: "Luna Logistics Load Board",
         description: "A comprehensive full-stack logistics management platform that streamlines freight load distribution and connects truck drivers with shipping opportunities. Features a public load board with real-time updates and a secure admin portal with role-based authentication.",
         link: "https://lunaloads.com",
-        image: "./assets/Luna Logistics Screenshot.jpg",
+        image: "./assets/lunaloads.png",
         technologies: ["Node.js", "Express.js", "PostgreSQL", "HTML5", "CSS3", "JavaScript"],
         featured: true
     },
