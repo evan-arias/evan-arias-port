@@ -1,10 +1,18 @@
 // Projects data
 const projects = [
     {
+        title: "Luna Logistics Website & Freight Calculator",
+        description: "Comprehensive freight rate calculator providing instant shipping quotes for nationwide semi truck transportation. Features real DAT market data integration, distance-based pricing algorithms, and equipment-specific rate calculations with a clean, professional interface.",
+        link: "https://lunalogistics.net",
+        image: "./assets/Luna Logistics Website.png",
+        technologies: ["WordPress", "PHP", "JavaScript", "CSS3", "MySQL", "API Integration"],
+        featured: true
+    },
+    {
         title: "Luna Logistics Load Board",
         description: "A comprehensive full-stack logistics management platform that streamlines freight load distribution and connects truck drivers with shipping opportunities. Features a public load board with real-time updates and a secure admin portal with role-based authentication.",
         link: "https://lunaloads.com",
-        image: "./assets/lunaloads.png",
+        image: "./assets/Luna Logistics Screenshot.jpg",
         technologies: ["Node.js", "Express.js", "PostgreSQL", "HTML5", "CSS3", "JavaScript"],
         featured: true
     },
